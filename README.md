@@ -1,17 +1,13 @@
-# Nome do projeto
-Escreva um ou dois  parágrafo resumindo o objetivo do seu projeto.
+# LocaVeículos
+O LocaVeículas é um sistema de locadora de veículos desenvolvido em C# com o uso do Entity Framework para mapeamento objeto-relacional e o SQL Express como banco de dados. O sistema visa o gerenciamento de veículos, clientes e reservas de forma eficiente e intuitiva.
 
 ## Alunos integrantes da equipe
 
-* Nome completo do aluno 1
-* Nome completo do aluno 2
-* Nome completo do aluno 3
-* Nome completo do aluno 4
+* Lêda Lacerda Bombinho do Val
 
 ## Professores responsáveis
 
-* Nome completo do professor 1
-* Nome completo do professor 2
+* Leonardo Vilela Cardoso
 
 ## Instruções de utilização
 

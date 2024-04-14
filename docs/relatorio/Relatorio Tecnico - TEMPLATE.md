@@ -1,21 +1,15 @@
 # Informações do Projeto
 `TÍTULO DO PROJETO`  
 
-......  COLOQUE AQUI O SEU TEXTO ......
+LocaVeículas
 
 `CURSO` 
 
-......  COLOQUE AQUI O SEU TEXTO ......
+Tecnologia em Análise e Desenvolvimento de Sistemas
 
 ## Participantes
 
-......  COLOQUE AQUI O SEU TEXTO ......
-
-> Inclua a lista dos membros da equipe com seus nomes completos.
->
-> Os membros do grupo são: 
-> - Fulano da Silva
-> - Ciclano Albuquerque
+> Lêda Lacerda Bombinho do Val
 
 # Estrutura do Documento
 
