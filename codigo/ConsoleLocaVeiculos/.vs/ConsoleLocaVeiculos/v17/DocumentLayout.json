@@ -5,10 +5,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{41ABB985-2357-48EF-8418-8B553639D46E}|ConsoleLocaVeiculos\\ConsoleLocaVeiculos.csproj|c:\\users\\ledad\\onedrive\\\u00E1rea de trabalho\\tads\\codigo\\consolelocaveiculos\\consolelocaveiculos\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{41ABB985-2357-48EF-8418-8B553639D46E}|ConsoleLocaVeiculos\\ConsoleLocaVeiculos.csproj|solutionrelative:consolelocaveiculos\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\ledad\\OneDrive\\\u00C1rea de Trabalho\\tads\\codigo\\ConsoleLocaVeiculos\\ConsoleLocaVeiculos\\Migrations\\20240415001438_locaveiculos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:ConsoleLocaVeiculos\\Migrations\\20240415001438_locaveiculos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -35,17 +31,8 @@
               "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
             },
             {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "20240415001438_locaveiculos.cs",
-              "DocumentMoniker": "C:\\Users\\ledad\\OneDrive\\\u00C1rea de Trabalho\\tads\\codigo\\ConsoleLocaVeiculos\\ConsoleLocaVeiculos\\Migrations\\20240415001438_locaveiculos.cs",
-              "RelativeDocumentMoniker": "ConsoleLocaVeiculos\\Migrations\\20240415001438_locaveiculos.cs",
-              "ToolTip": "C:\\Users\\ledad\\OneDrive\\\u00C1rea de Trabalho\\tads\\codigo\\ConsoleLocaVeiculos\\ConsoleLocaVeiculos\\Migrations\\20240415001438_locaveiculos.cs",
-              "RelativeToolTip": "ConsoleLocaVeiculos\\Migrations\\20240415001438_locaveiculos.cs",
-              "ViewState": "AQIAACsAAAAAAAAAAAAgwAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-15T00:14:39.961Z",
-              "EditorCaption": ""
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c64b9c2-e352-428e-a56d-0ace190b99a6}"
             },
             {
               "$type": "Document",
@@ -53,9 +40,9 @@
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\ledad\\OneDrive\\\u00C1rea de Trabalho\\tads\\codigo\\ConsoleLocaVeiculos\\ConsoleLocaVeiculos\\Program.cs",
               "RelativeDocumentMoniker": "ConsoleLocaVeiculos\\Program.cs",
-              "ToolTip": "C:\\Users\\ledad\\OneDrive\\\u00C1rea de Trabalho\\tads\\codigo\\ConsoleLocaVeiculos\\ConsoleLocaVeiculos\\Program.cs*",
-              "RelativeToolTip": "ConsoleLocaVeiculos\\Program.cs*",
-              "ViewState": "AQIAAFYAAAAAAAAAAAAowF0AAAAqAAAA",
+              "ToolTip": "C:\\Users\\ledad\\OneDrive\\\u00C1rea de Trabalho\\tads\\codigo\\ConsoleLocaVeiculos\\ConsoleLocaVeiculos\\Program.cs",
+              "RelativeToolTip": "ConsoleLocaVeiculos\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-14T23:10:53.543Z",
               "EditorCaption": ""
