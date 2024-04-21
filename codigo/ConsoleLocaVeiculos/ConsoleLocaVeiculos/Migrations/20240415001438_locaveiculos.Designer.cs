@@ -6,14 +6,15 @@ using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
 using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
+using ConsoleLocaVeiculos.Context;
 
 #nullable disable
 
 namespace ConsoleLocaVeiculos.Migrations
 {
-    [DbContext(typeof(Program.ApplicationContext))]
+    [DbContext(typeof(ApplicationContext))]
     [Migration("20240415001438_locaveiculos")]
-    partial class locaveiculos
+    partial class LocaVeiculos
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)

@@ -1,3 +1,9 @@
+C:\Users\ledad\OneDrive\Área de Trabalho\tads\codigo\ConsoleLocaVeiculos\ConsoleLocaVeiculos\obj\Debug\net8.0\ConsoleLocaVeiculos.csproj.AssemblyReference.cache
+C:\Users\ledad\OneDrive\Área de Trabalho\tads\codigo\ConsoleLocaVeiculos\ConsoleLocaVeiculos\obj\Debug\net8.0\ConsoleLocaVeiculos.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ledad\OneDrive\Área de Trabalho\tads\codigo\ConsoleLocaVeiculos\ConsoleLocaVeiculos\obj\Debug\net8.0\ConsoleLocaVeiculos.AssemblyInfoInputs.cache
+C:\Users\ledad\OneDrive\Área de Trabalho\tads\codigo\ConsoleLocaVeiculos\ConsoleLocaVeiculos\obj\Debug\net8.0\ConsoleLocaVeiculos.AssemblyInfo.cs
+C:\Users\ledad\OneDrive\Área de Trabalho\tads\codigo\ConsoleLocaVeiculos\ConsoleLocaVeiculos\obj\Debug\net8.0\ConsoleLocaVeiculos.csproj.CoreCompileInputs.cache
+C:\Users\ledad\OneDrive\Área de Trabalho\tads\codigo\ConsoleLocaVeiculos\ConsoleLocaVeiculos\obj\Debug\net8.0\ConsoleLocaVeiculos.sourcelink.json
 C:\Users\ledad\OneDrive\Área de Trabalho\tads\codigo\ConsoleLocaVeiculos\ConsoleLocaVeiculos\bin\Debug\net8.0\ConsoleLocaVeiculos.exe
 C:\Users\ledad\OneDrive\Área de Trabalho\tads\codigo\ConsoleLocaVeiculos\ConsoleLocaVeiculos\bin\Debug\net8.0\ConsoleLocaVeiculos.deps.json
 C:\Users\ledad\OneDrive\Área de Trabalho\tads\codigo\ConsoleLocaVeiculos\ConsoleLocaVeiculos\bin\Debug\net8.0\ConsoleLocaVeiculos.runtimeconfig.json
@@ -117,12 +123,6 @@ C:\Users\ledad\OneDrive\Área de Trabalho\tads\codigo\ConsoleLocaVeiculos\Consol
 C:\Users\ledad\OneDrive\Área de Trabalho\tads\codigo\ConsoleLocaVeiculos\ConsoleLocaVeiculos\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Runtime.Caching.dll
 C:\Users\ledad\OneDrive\Área de Trabalho\tads\codigo\ConsoleLocaVeiculos\ConsoleLocaVeiculos\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
 C:\Users\ledad\OneDrive\Área de Trabalho\tads\codigo\ConsoleLocaVeiculos\ConsoleLocaVeiculos\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
-C:\Users\ledad\OneDrive\Área de Trabalho\tads\codigo\ConsoleLocaVeiculos\ConsoleLocaVeiculos\obj\Debug\net8.0\ConsoleLocaVeiculos.csproj.AssemblyReference.cache
-C:\Users\ledad\OneDrive\Área de Trabalho\tads\codigo\ConsoleLocaVeiculos\ConsoleLocaVeiculos\obj\Debug\net8.0\ConsoleLocaVeiculos.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\ledad\OneDrive\Área de Trabalho\tads\codigo\ConsoleLocaVeiculos\ConsoleLocaVeiculos\obj\Debug\net8.0\ConsoleLocaVeiculos.AssemblyInfoInputs.cache
-C:\Users\ledad\OneDrive\Área de Trabalho\tads\codigo\ConsoleLocaVeiculos\ConsoleLocaVeiculos\obj\Debug\net8.0\ConsoleLocaVeiculos.AssemblyInfo.cs
-C:\Users\ledad\OneDrive\Área de Trabalho\tads\codigo\ConsoleLocaVeiculos\ConsoleLocaVeiculos\obj\Debug\net8.0\ConsoleLocaVeiculos.csproj.CoreCompileInputs.cache
-C:\Users\ledad\OneDrive\Área de Trabalho\tads\codigo\ConsoleLocaVeiculos\ConsoleLocaVeiculos\obj\Debug\net8.0\ConsoleLocaVeiculos.sourcelink.json
 C:\Users\ledad\OneDrive\Área de Trabalho\tads\codigo\ConsoleLocaVeiculos\ConsoleLocaVeiculos\obj\Debug\net8.0\ConsoleL.C99FA77E.Up2Date
 C:\Users\ledad\OneDrive\Área de Trabalho\tads\codigo\ConsoleLocaVeiculos\ConsoleLocaVeiculos\obj\Debug\net8.0\ConsoleLocaVeiculos.dll
 C:\Users\ledad\OneDrive\Área de Trabalho\tads\codigo\ConsoleLocaVeiculos\ConsoleLocaVeiculos\obj\Debug\net8.0\refint\ConsoleLocaVeiculos.dll

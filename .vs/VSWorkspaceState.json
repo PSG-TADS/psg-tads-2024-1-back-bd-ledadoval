@@ -2,9 +2,12 @@
   "ExpandedNodes": [
     "",
     "\\codigo",
+    "\\codigo\\ConsoleLocaVeiculos",
+    "\\codigo\\ConsoleLocaVeiculos\\ConsoleLocaVeiculos",
     "\\docs",
-    "\\docs\\concepcao"
+    "\\docs\\concepcao",
+    "\\docs\\relatorio"
   ],
-  "SelectedNode": "\\docs\\concepcao\\modelconceitual.png",
+  "SelectedNode": "\\docs\\relatorio\\Relatorio Tecnico - TEMPLATE.md",
   "PreviewInSolutionExplorer": false
 }
