@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ConsoleLocaVeiculos")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ae7e5bcfaf4610b08b72f86a036037e4f66e3dd7")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ce3f9d062fed91a100f8e6668d830d946b77d395")]
 [assembly: System.Reflection.AssemblyProductAttribute("ConsoleLocaVeiculos")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ConsoleLocaVeiculos")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
