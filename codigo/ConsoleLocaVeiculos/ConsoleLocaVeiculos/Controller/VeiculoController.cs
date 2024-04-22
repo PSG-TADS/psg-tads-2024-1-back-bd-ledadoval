@@ -1,11 +1,7 @@
 ﻿using ConsoleLocaVeiculos.Context;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-using System;
-using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace ConsoleLocaVeiculos.Controller
 {
@@ -27,7 +23,6 @@ namespace ConsoleLocaVeiculos.Controller
             var veiculos = _context.Veiculo.ToList();
             return Ok(veiculos);
         }
-
 
         // GET: api/Veiculo/5
         [HttpGet("{id}")]
@@ -63,16 +58,20 @@ namespace ConsoleLocaVeiculos.Controller
             return Ok(veiculo);
         }
 
-
         // POST: api/Veiculo
         [HttpPost]
         public IActionResult CriarVeiculo([FromBody] Veiculo veiculo)
         {
+            // Verifica se já existe um veículo com a mesma placa
+            if (_context.Veiculo.Any(v => v.PlacaVeiculo == veiculo.PlacaVeiculo))
+            {
+                return Conflict("Já existe um veículo com a mesma placa.");
+            }
+
             _context.Veiculo.Add(veiculo);
             _context.SaveChanges();
             return CreatedAtAction(nameof(GetVeiculo), new { id = veiculo.IDVeiculo }, veiculo);
         }
-
 
         // DELETE: api/Veiculo/5
         [HttpDelete("{id}")]
@@ -87,7 +86,6 @@ namespace ConsoleLocaVeiculos.Controller
             _context.SaveChanges();
             return NoContent();
         }
-
 
         private bool VeiculoExists(int id)
         {
