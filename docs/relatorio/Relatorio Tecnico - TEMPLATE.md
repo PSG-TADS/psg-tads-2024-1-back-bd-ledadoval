@@ -42,71 +42,29 @@ Tecnologia em Análise e Desenvolvimento de Sistemas
 
 ## Problema
 
-......  COLOQUE AQUI O SEU TEXTO ......
-
-> Nesse momento você deve apresentar o problema que a sua aplicação deve
-> resolver. No entanto, não é a hora de comentar sobre a aplicação.
-> Descreva também o contexto em que essa aplicação será usada, se
-> houver: empresa, tecnologias, etc. Novamente, descreva apenas o que de
-> fato existir, pois ainda não é a hora de apresentar requisitos
-> detalhados ou projetos.
->
-> Nesse momento, o grupo pode optar por fazer uso
-> de ferramentas como Design Thinking, que permite um olhar de ponta a
-> ponta para o problema.
->
-> **Links Úteis**:
-> - [Objetivos, Problema de pesquisa e Justificativa](https://medium.com/@versioparole/objetivos-problema-de-pesquisa-e-justificativa-c98c8233b9c3)
-> - [Matriz Certezas, Suposições e Dúvidas](https://medium.com/educa%C3%A7%C3%A3o-fora-da-caixa/matriz-certezas-suposi%C3%A7%C3%B5es-e-d%C3%BAvidas-fa2263633655)
-> - [Brainstorming](https://www.euax.com.br/2018/09/brainstorming/)
+Nesse cenário de gestão de uma locadora de automóveis, detectamos um problema em comum: gestão manual e desorganizada das operações da empresa. Tarefas como registro de locações, controle de estoque de veículos e acompanhamento de clientes eram realizadas de forma manual, o que resultava em erros, inconsistências nos dados e lentidão nos processos. Além disso, a falta de uma visão integrada e análise de dados dificultava a identificação de tendências de mercado e oportunidades de otimização. 
 
 ## Objetivos
 
-......  COLOQUE AQUI O SEU TEXTO ......
-
-> Aqui você deve descrever os objetivos do trabalho indicando que o
-> objetivo geral é desenvolver um software para solucionar o problema
-> apresentado acima. Apresente também alguns (pelo menos 2) objetivos
-> específicos dependendo de onde você vai querer concentrar a sua
-> prática investigativa, ou como você vai aprofundar no seu trabalho.
-> 
-> **Links Úteis**:
-> - [Objetivo geral e objetivo específico: como fazer e quais verbos utilizar](https://blog.mettzer.com/diferenca-entre-objetivo-geral-e-objetivo-especifico/)
+O objetivo do LocaVeiculos é desenvolver uma plataforma eficiente para o gerenciamento completo das operações relacionadas à locação de veículos. Isso inclui o cadastro de veículos disponíveis para locação, registro de clientes, controle de reservas e acompanhamento do status dos veículos. Nosso foco é oferecer uma solução completa e integrada para a gestão de uma locadora de veículos, contribuindo para a eficiência operacional e o sucesso do negócio.
 
 ## Justificativa
 
-......  COLOQUE AQUI O SEU TEXTO ......
-
-> Descreva a importância ou a motivação para trabalhar com esta aplicação
-> que você escolheu. Indique as razões pelas quais você escolheu seus
-> objetivos específicos ou as razões para aprofundar em certos aspectos
-> do software.
-> 
-> O grupo de trabalho pode fazer uso de questionários, entrevistas e
-> dados estatísticos, que podem ser apresentados, com o objetivo de
-> esclarecer detalhes do problema que será abordado pelo grupo.
->
-> **Links Úteis**:
-> - [Como montar a justificativa](https://guiadamonografia.com.br/como-montar-justificativa-do-tcc/)
+O LocaVeiculos surge através da necessidade de modernizar e otimizar os processos operacionais de empresas de locação de veículos. A implementação desse sistema visa automatizar tarefas manuais, melhorar a eficiência operacional, aumentar a precisão e confiabilidade dos dados, proporcionar uma experiência mais satisfatória para os clientes e fornecer insights valiosos para tomada de decisões estratégicas. Essas melhorias são essenciais para manter a competitividade no mercado e garantir o sucesso do negócio a longo prazo.
 
 ## Público-Alvo
 
-......  COLOQUE AQUI O SEU TEXTO ......
+O público-alvo do LocaVeiculos inclui tanto a equipe interna da empresa quanto os clientes que utilizam os serviços da locadora.
 
-> Descreva quem serão as pessoas que usarão a sua aplicação indicando os
-> diferentes perfis. O objetivo aqui não é definir quem serão os
-> clientes ou quais serão os papéis dos usuários na aplicação. A ideia
-> é, dentro do possível, conhecer um pouco mais sobre o perfil dos
-> usuários: conhecimentos prévios, relação com a tecnologia, relações
-> hierárquicas, etc.
->
-> Adicione informações sobre o público-alvo por meio de uma descrição
-> textual, ou diagramas de personas, mapa de stakeholders, ou como o
-> grupo achar mais conveniente.
-> 
-> **Links Úteis**:
-> - [Público-alvo: o que é, tipos, como definir seu público e exemplos](https://klickpages.com.br/blog/publico-alvo-o-que-e/)
-> - [Qual a diferença entre público-alvo e persona?](https://rockcontent.com/blog/diferenca-publico-alvo-e-persona/)
+> Equipe Interna:
+- Gerentes e supervisores responsáveis pela gestão da locadora.
+- Funcionários responsáveis pelo atendimento aos clientes, reservas de veículos e manutenção da frota.
+- Equipe financeira encarregada do controle de pagamentos e faturamento.
+- Administradores de sistema responsáveis pela manutenção e atualização do sistema.
+> Clientes da Locadora:
+- Indivíduos que desejam alugar veículos para viagens, trabalho ou necessidades pessoais.
+- Empresas que necessitam de veículos para fins comerciais ou transporte de funcionários.
+- Turistas que visitam a região e precisam de meios de transporte temporários.
 
 ## Requisitos
 
