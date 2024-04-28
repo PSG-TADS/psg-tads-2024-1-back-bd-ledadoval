@@ -39,6 +39,11 @@ Tecnologia em Análise e Desenvolvimento de Sistemas
 
 
 # Introdução
+As empresas de locação de veículo estão presentes na nossa sociedade e desempenham um papel crucial na mobilidade urbana atual. Com a crescente demanda de locação de veiculos, o desenvolvimento de sistemas eficientes para gestão desse negócio tornou-se primordial. Em resposta a essa demanda, surge o projeto LocaVeículas como uma solução abrangente projetada para otimizar o processo de aluguel de veículos.
+
+Este projeto, desenvolvido usando C'\#' e aproveitando tecnologias como Entity Framework e SQL Express, visa revolucionar a maneira como os serviços de aluguel de veículos são gerenciados. Ao fornecer ferramentas intuitivas para gerenciar veículos, clientes e reservas, o LocaVeículas busca aprimorar a experiência geral de aluguel tanto para os clientes quanto para o pessoal da agência de aluguel.
+
+Neste trabalho, exploramos as características, implementação e benefícios potenciais do sistema LocaVeículas, investigando suas capacidades em otimizar operações e melhorar a satisfação do cliente dentro da indústria de aluguel de veículos.
 
 ## Problema
 
@@ -66,72 +71,329 @@ O público-alvo do LocaVeiculos inclui tanto a equipe interna da empresa quanto 
 - Empresas que necessitam de veículos para fins comerciais ou transporte de funcionários.
 - Turistas que visitam a região e precisam de meios de transporte temporários.
 
-## Requisitos
+# Requisitos
+## Requisitos Funcionais
 
-As tabelas que se seguem apresentam os requisitos funcionais e não funcionais que detalham o escopo do projeto.
+**Gerenciamento de Veículos:**
+- Cadastro de novos veículos no sistema, incluindo informações como modelo, marca, ano, placa, situação, tipo de combustível e tipo do veículo.
+- Atualização e remoção de informações de veículos existentes.
+- Visualização e busca rápida de veículos disponíveis para locação.
 
-### Requisitos Funcionais
+**Gerenciamento de Clientes:**
+- Registro de novos clientes, incluindo detalhes como nome, telefone, endereço, email, se já cliente e quantos veículos ele já alugou.
+- Edição e exclusão de informações de clientes.
+- Possibilidade de manter registros de clientes frequentes para oferecer descontos ou promoções especiais, tendo em vista que registramos a frequência de locação de carros.
 
-|ID    | Descrição do Requisito  | Prioridade |
-|------|-----------------------------------------|----|
-|RF-001| Permitir que o usuário cadastre tarefas | ALTA | 
-|RF-002| Emitir um relatório de tarefas no mês   | MÉDIA |
+**Reservas:**
+- Funcionalidade para criar novas reservas, especificando o veículo desejado, o período de locação, se irá estender o período de locação e o valor final.
+- Visualização e gerenciamento de reservas existentes, incluindo a capacidade de editar ou cancelar reservas.
 
+## Requisitos Não Funcionais
 
-### Requisitos não Funcionais
+**Desempenho:**
+- O sistema deve ser responsivo e rápido, mesmo com um grande volume de dados e usuários simultâneos.
+- O tempo de resposta para consultas e operações do sistema deve ser mínimo, garantindo uma experiência eficiente para os usuários.
 
-|ID     | Descrição do Requisito  |Prioridade |
-|-------|-------------------------|----|
-|RNF-001| O sistema deve ser responsivo para rodar em um dispositivos móvel | MÉDIA | 
-|RNF-002| Deve processar requisições do usuário em no máximo 3s |  BAIXA | 
+**Escalabilidade:**
+- Capacidade de expansão do sistema para lidar com um aumento na demanda de usuários e crescimento da frota de veículos ao longo do tempo.
+- Arquitetura flexível que permite adicionar novos recursos e funcionalidades conforme necessário.
 
-> Com base nas Histórias de Usuário, enumere os requisitos da sua
-> solução. Classifique esses requisitos em dois grupos:
->
-> - [Requisitos Funcionais (RF)](https://pt.wikipedia.org/wiki/Requisito_funcional):
->   correspondem a uma funcionalidade que deve estar presente na
->   plataforma (ex: cadastro de usuário).
->
-> - [Requisitos Não Funcionais (RNF)](https://pt.wikipedia.org/wiki/Requisito_n%C3%A3o_funcional):
->   correspondem a uma característica técnica, seja de usabilidade,
->   desempenho, confiabilidade, segurança ou outro (ex: suporte a
->   dispositivos iOS e Android).
->
-> Lembre-se que cada requisito deve corresponder à uma e somente uma
-> característica alvo da sua solução. Além disso, certifique-se de que
-> todos os aspectos capturados nas Histórias de Usuário foram cobertos.
-> 
-> **Links Úteis**:
-> 
-> - [O que são Requisitos Funcionais e Requisitos Não Funcionais?](https://codificar.com.br/requisitos-funcionais-nao-funcionais/)
-> - [O que são requisitos funcionais e requisitos não funcionais?](https://analisederequisitos.com.br/requisitos-funcionais-e-requisitos-nao-funcionais-o-que-sao/)
+**Confiabilidade:**
+- Garantia de disponibilidade do sistema durante o horário comercial, minimizando o tempo de inatividade não planejado.
 
+# Arquitetura do Sistema
 
-## Arquitetura do Sistema
+## Descrição da Arquitetura
 
-......  COLOQUE AQUI O SEU TEXTO DE INTRODUÇÃO ......
+A arquitetura do sistema foi desenvolvida seguindo o padrão MVC (Model-View-Controller) para garantir uma separação clara de responsabilidades entre os diferentes componentes. Essa abordagem garante uma divisão clara de responsabilidades e facilita a manutenção e escalabilidade do sistema.
 
-> - Descrição da arquitetura utilizada, incluindo o padrão MVC (Model-View-Controller) ou similar.
-- Explanação sobre a divisão de responsabilidades entre as camadas do sistema.
-- Diagramas de arquitetura, se aplicável.
+## Separação interna do projeto
 
+A divisão de responsabilidades entre as camadas do sistema foi realizada da seguinte maneira:
+
+- A camada de **Models** é responsável pela manipulação e persistência dos dados, incluindo a definição das entidades do banco de dados, mapeadas para classes C# usando o Entity Framework.
+  
+- A camada de **Context** é substituída por respostas JSON retornadas pelos endpoints da API. Essas respostas são serializações dos objetos retornados pelo modelo para representar os dados de forma estruturada.
+  
+- A camada de **Controller** é responsável por receber as requisições HTTP dos clientes, roteá-las para as ações apropriadas e retornar as respostas correspondentes. As controllers contêm a lógica de aplicação para processar as requisições e atualizar o modelo conforme necessário.
 
 # Implementação Técnica
 
-......  COLOQUE AQUI O SEU TEXTO DE INTRODUÇÃO ......
+## Tecnologias Utilizadas
 
-> - Detalhamento das tecnologias utilizadas, como C# 6.0 (ou superior), ASP.NET Core, Entity Framework, SQL Express, Swagger, entre outras.
-- Explicação sobre as principais classes e suas responsabilidades.
-- Discussão sobre as escolhas de design e padrões de desenvolvimento adotados.
+A implementação técnica do sistema foi realizada utilizando as seguintes tecnologias:
 
-## Descrição do Banco de Dados
+- **C# 8.0:** Linguagem de programação utilizada para o desenvolvimento da aplicação backend.
+  
+- **ASP.NET Core:** Framework utilizado para criar APIs web robustas e escaláveis.
+  
+- **Entity Framework:** ORM (Object-Relational Mapping) utilizado para mapear as entidades do banco de dados relacional para objetos em C#.
+  
+- **SQL Server:** Banco de dados relacional utilizado para armazenar e persistir os dados sobre as reservas de aluguel de veículos.
+  
+- **Swagger:** Ferramenta utilizada para documentar e testar APIs de forma interativa.
 
-......  INCLUA AQUI A DESCRIÇÃO DO BANCO DE DADOS ......
+## Principais Classes e Responsabilidades
 
-> - Apresentação do modelo de dados utilizado no sistema.
-- Descrição das tabelas, relacionamentos e restrições de integridade.
-- Exemplificação de consultas SQL relevantes.
+As principais classes do sistema e suas responsabilidades são:
 
+- **ApplicationContext:** Classe responsável por configurar e fornecer acesso ao contexto do banco de dados utilizando o Entity Framework.
+  
+- **ClienteController:** Classe responsável por definir os endpoints da API relacionados aos clientes, incluindo operações CRUD (Create, Read, Update, Delete).
+  
+- **ReservaController:** Classe responsável por definir os endpoints da API relacionados às reservas de veículos.
+  
+- **VeiculoController:** Classe responsável por definir os endpoints da API relacionados aos veículos disponíveis para locação.
+  
+- **Outras classes de modelo:** Classes que representam as entidades do banco de dados, como Cliente, Reserva, Veiculo, entre outras. Essas classes contêm propriedades que correspondem aos campos das tabelas do banco de dados e métodos para manipular esses dados.
+
+## Escolhas de Design e Padrões de Desenvolvimento
+
+Durante o desenvolvimento do sistema, foram adotadas as seguintes escolhas de design e padrões de desenvolvimento:
+
+- **Padrão MVC:** O sistema foi estruturado seguindo o padrão MVC (Model-View-Controller) para garantir uma separação clara de responsabilidades entre os diferentes componentes da aplicação.
+  
+- **Uso do Entity Framework:** O Entity Framework foi escolhido para facilitar o acesso e manipulação dos dados do banco de dados, utilizando abordagens de Code First ou Database First, dependendo das necessidades do projeto.
+  
+- **API RESTful:** A API foi projetada seguindo os princípios RESTful, utilizando verbos HTTP para operações CRUD e URLs amigáveis para representar recursos.
+  
+- **Documentação com Swagger:** A documentação da API foi feita utilizando o Swagger, que permite gerar automaticamente uma documentação interativa com descrições detalhadas de cada endpoint, parâmetros necessários e exemplos de respostas.
+
+Essas escolhas de design e padrões de desenvolvimento foram adotadas para garantir a robustez, escalabilidade e manutenibilidade do sistema.
+
+# Descrição do Banco de Dados
+
+## Modelo de Dados
+
+O modelo de dados utilizado no sistema é composto por várias entidades relacionadas entre si. Abaixo está a descrição das principais tabelas do banco de dados:
+
+- **Tabela Cliente:** Armazena informações sobre os clientes da locadora de veículos, como nome, telefone, endereço, email, entre outros.
+  
+- **Tabela Veiculo:** Contém informações sobre os veículos disponíveis para locação, incluindo modelo, marca, ano, placa, tipo de combustível, entre outros.
+  
+- **Tabela Reserva:** Registra as reservas de veículos realizadas pelos clientes, incluindo o cliente associado, o veículo reservado, o período de locação, o valor total, entre outros.
+
+## Relacionamentos
+
+Existem vários relacionamentos entre as entidades do banco de dados:
+
+- Um cliente pode ter várias reservas de veículos associadas a ele, mas uma reserva está associada a apenas um cliente.
+  
+- Um veículo pode estar associado a várias reservas, mas uma reserva está associada a apenas um veículo.
+
+Esses relacionamentos são estabelecidos por meio de chaves estrangeiras nas tabelas do banco de dados.
+
+# Documentação EndPoints
+
+## API Cliente
+
+Esta API fornece endpoints para realizar operações CRUD (Create, Read, Update, Delete) em relação aos clientes no LocaVeiculo.
+
+### GET: api/Cliente
+
+Retorna uma lista de todos os clientes cadastrados.
+
+- **Método HTTP:** `GET`
+- **Endpoint:** `GET /api/Cliente`
+- **Descrição:** Retorna uma lista de todos os clientes cadastrados no sistema.
+- **Resposta:** Uma lista de objetos JSON representando os clientes, ou um array vazio se não houver clientes cadastrados.
+- **Código de Resposta:**
+    - 200 OK: Requisição bem-sucedida.
+    - 404 Not Found: Não foram encontrados clientes cadastrados.
+
+### GET: api/Cliente/{id}
+
+Retorna os detalhes de um cliente específico com o ID fornecido.
+
+- **Método HTTP:** `GET`
+- **Endpoint:** `GET /api/Cliente/{id}`
+- **Descrição:** Retorna os detalhes de um cliente específico com o ID fornecido.
+- **Parâmetros:** `id` - O ID do cliente a ser recuperado.
+- **Resposta:** Um objeto JSON representando o cliente com o ID fornecido.
+- **Código de Resposta:**
+    - 200 OK: Requisição bem-sucedida.
+    - 404 Not Found: Cliente não encontrado.
+
+### PUT: api/Cliente/{id}
+
+Atualiza os detalhes de um cliente existente com o ID fornecido.
+
+- **Método HTTP:** `PUT`
+- **Endpoint:** `PUT /api/Cliente/{id}`
+- **Descrição:** Atualiza os detalhes de um cliente existente com o ID fornecido.
+- **Parâmetros:** `id` - O ID do cliente a ser atualizado.
+- **Corpo da Requisição:** Um objeto JSON contendo os novos detalhes do cliente.
+- **Resposta:** Nenhuma resposta é retornada no corpo da resposta.
+- **Código de Resposta:**
+    - 204 No Content: Cliente atualizado com sucesso.
+    - 400 Bad Request: O ID do cliente no corpo da requisição não corresponde ao ID fornecido nos parâmetros da URL.
+    - 404 Not Found: Cliente não encontrado.
+
+### POST: api/Cliente
+
+Cria um novo cliente com os detalhes fornecidos.
+
+- **Método HTTP:** `POST`
+- **Endpoint:** `POST /api/Cliente`
+- **Descrição:** Cria um novo cliente com os detalhes fornecidos.
+- **Corpo da Requisição:** Um objeto JSON contendo os detalhes do novo cliente a ser criado.
+- **Resposta:** Um objeto JSON representando o novo cliente criado.
+- **Código de Resposta:**
+    - 201 Created: Cliente criado com sucesso.
+    - 409 Conflict: Já existe um cliente com o mesmo email ou telefone.
+
+### DELETE: api/Cliente/{id}
+
+Remove um cliente existente com o ID fornecido.
+
+- **Método HTTP:** `DELETE`
+- **Endpoint:** `DELETE /api/Cliente/{id}`
+- **Descrição:** Remove um cliente existente com o ID fornecido.
+- **Parâmetros:** `id` - O ID do cliente a ser removido.
+- **Resposta:** Nenhuma resposta é retornada no corpo da resposta.
+- **Código de Resposta:**
+    - 204 No Content: Cliente removido com sucesso.
+    - 404 Not Found: Cliente não encontrado.
+
+## API Reserva
+
+Esta API fornece endpoints para realizar operações CRUD (Create, Read, Update, Delete) em relação as reservas do sistema.
+
+### GET: api/Reserva
+
+Retorna uma lista de todas as reservas cadastradas.
+
+- **Método HTTP:** `GET`
+- **Endpoint:** `GET /api/Reserva`
+- **Descrição:** Retorna uma lista de todas as reservas cadastradas no sistema.
+- **Resposta:** Uma lista de objetos JSON representando as reservas, ou um array vazio se não houver reservas cadastradas.
+- **Código de Resposta:**
+    - 200 OK: Requisição bem-sucedida.
+    - 404 Not Found: Não foram encontradas reservas cadastradas.
+
+### GET: api/Reserva/{id}
+
+Retorna os detalhes de uma reserva específica com o ID fornecido.
+
+- **Método HTTP:** `GET`
+- **Endpoint:** `GET /api/Reserva/{id}`
+- **Descrição:** Retorna os detalhes de uma reserva específica com o ID fornecido.
+- **Parâmetros:** `id` - O ID da reserva a ser recuperada.
+- **Resposta:** Um objeto JSON representando a reserva com o ID fornecido.
+- **Código de Resposta:**
+    - 200 OK: Requisição bem-sucedida.
+    - 404 Not Found: Reserva não encontrada.
+
+### PUT: api/Reserva/{id}
+
+Atualiza os detalhes de uma reserva existente com o ID fornecido.
+
+- **Método HTTP:** `PUT`
+- **Endpoint:** `PUT /api/Reserva/{id}`
+- **Descrição:** Atualiza os detalhes de uma reserva existente com o ID fornecido.
+- **Parâmetros:** `id` - O ID da reserva a ser atualizada.
+- **Corpo da Requisição:** Um objeto JSON contendo os novos detalhes da reserva.
+- **Resposta:** Nenhuma resposta é retornada no corpo da resposta.
+- **Código de Resposta:**
+    - 204 No Content: Reserva atualizada com sucesso.
+    - 400 Bad Request: O ID da reserva no corpo da requisição não corresponde ao ID fornecido nos parâmetros da URL.
+    - 404 Not Found: Reserva não encontrada.
+
+### POST: api/Reserva
+
+Cria uma nova reserva com os detalhes fornecidos.
+
+- **Método HTTP:** `POST`
+- **Endpoint:** `POST /api/Reserva`
+- **Descrição:** Cria uma nova reserva com os detalhes fornecidos.
+- **Corpo da Requisição:** Um objeto JSON contendo os detalhes da nova reserva a ser criada.
+- **Resposta:** Um objeto JSON representando a nova reserva criada.
+- **Código de Resposta:**
+    - 201 Created: Reserva criada com sucesso.
+    - 409 Conflict: Já existe uma reserva com o mesmo ID.
+
+### DELETE: api/Reserva/{id}
+
+Remove uma reserva existente com o ID fornecido.
+
+- **Método HTTP:** `DELETE`
+- **Endpoint:** `DELETE /api/Reserva/{id}`
+- **Descrição:** Remove uma reserva existente com o ID fornecido.
+- **Parâmetros:** `id` - O ID da reserva a ser removida.
+- **Resposta:** Nenhuma resposta é retornada no corpo da resposta.
+- **Código de Resposta:**
+    - 204 No Content: Reserva removida com sucesso.
+    - 404 Not Found: Reserva não encontrada.
+
+## API Veículo
+
+Esta API fornece endpoints para realizar operações CRUD (Create, Read, Update, Delete) sobre os veículos no sistema da LocaVeiculos.
+
+### GET: api/Veiculo
+
+Retorna uma lista de todos os veículos cadastrados.
+
+- **Método HTTP:** `GET`
+- **Endpoint:** `GET /api/Veiculo`
+- **Descrição:** Retorna uma lista de todos os veículos cadastrados no sistema.
+- **Resposta:** Uma lista de objetos JSON representando os veículos, ou um array vazio se não houver veículos cadastrados.
+- **Código de Resposta:**
+    - 200 OK: Requisição bem-sucedida.
+    - 404 Not Found: Não foram encontrados veículos cadastrados.
+
+### GET: api/Veiculo/{id}
+
+Retorna os detalhes de um veículo específico com o ID fornecido.
+
+- **Método HTTP:** `GET`
+- **Endpoint:** `GET /api/Veiculo/{id}`
+- **Descrição:** Retorna os detalhes de um veículo específico com o ID fornecido.
+- **Parâmetros:** `id` - O ID do veículo a ser recuperado.
+- **Resposta:** Um objeto JSON representando o veículo com o ID fornecido.
+- **Código de Resposta:**
+    - 200 OK: Requisição bem-sucedida.
+    - 404 Not Found: Veículo não encontrado.
+
+### PUT: api/Veiculo/{id}
+
+Atualiza os detalhes de um veículo existente com o ID fornecido.
+
+- **Método HTTP:** `PUT`
+- **Endpoint:** `PUT /api/Veiculo/{id}`
+- **Descrição:** Atualiza os detalhes de um veículo existente com o ID fornecido.
+- **Parâmetros:** `id` - O ID do veículo a ser atualizado.
+- **Corpo da Requisição:** Um objeto JSON contendo os novos detalhes do veículo.
+- **Resposta:** Nenhuma resposta é retornada no corpo da resposta.
+- **Código de Resposta:**
+    - 204 No Content: Veículo atualizado com sucesso.
+    - 400 Bad Request: O ID do veículo no corpo da requisição não corresponde ao ID fornecido nos parâmetros da URL.
+    - 404 Not Found: Veículo não encontrado.
+
+### POST: api/Veiculo
+
+Cria um novo veículo com os detalhes fornecidos.
+
+- **Método HTTP:** `POST`
+- **Endpoint:** `POST /api/Veiculo`
+- **Descrição:** Cria um novo veículo com os detalhes fornecidos.
+- **Corpo da Requisição:** Um objeto JSON contendo os detalhes do novo veículo a ser criado.
+- **Resposta:** Um objeto JSON representando o novo veículo criado.
+- **Código de Resposta:**
+    - 201 Created: Veículo criado com sucesso.
+    - 409 Conflict: Já existe um veículo com a mesma placa.
+
+### DELETE: api/Veiculo/{id}
+
+Remove um veículo existente com o ID fornecido.
+
+- **Método HTTP:** `DELETE`
+- **Endpoint:** `DELETE /api/Veiculo/{id}`
+- **Descrição:** Remove um veículo existente com o ID fornecido.
+- **Parâmetros:** `id` - O ID do veículo a ser removido.
+- **Resposta:** Nenhuma resposta é retornada no corpo da resposta.
+- **Código de Resposta:**
+    - 204 No Content: Veículo removido com sucesso.
+    - 404 Not Found: Veículo não encontrado.
 
 ## Teste e Validação
 
@@ -150,27 +412,15 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 - Avaliação da conformidade dos requisitos do sistema.
 - Conclusões sobre a eficácia do sistema desenvolvido em atender às necessidades da locadora de veículos.
 
-## Considerações Finais
+# Considerações Finais
 
-......  COLOQUE AQUI AS CONSIDERAÇÕES FINAIS ......
+O sistema LocaVeículos, que foi desenvolvido para gerenciar locadoras de veículos, representa um avanço significativo na otimização de processos e na experiência do cliente. Utilizando tecnologias modernas, ele oferece uma solução robusta e escalável. Embora enfrentando desafios durante o desenvolvimento, como integração de componentes e garantia de desempenho, o LocaVeículos superou obstáculos e entregou um sistema eficiente.
 
-> - Reflexões sobre as experiências adquiridas durante o desenvolvimento do projeto.
-- Sugestões para melhorias futuras no sistema.
-- Agradecimentos, se aplicável.
+Os benefícios do LocaVeículos são notáveis, automatizando processos manuais, melhorando a precisão dos dados e proporcionando agilidade no atendimento. Além disso, sua capacidade analítica oferece suporte à tomada de decisões estratégicas. Olhando para o futuro, vemos potencial para expansão e aprimoramento com a integração de novas tecnologias e feedback contínuo dos usuários.
+
+Em suma, o LocaVeículos representa um passo significativo na evolução da indústria de aluguel de veículos, proporcionando benefícios tanto para empresas quanto para clientes, e contribuindo para um setor mais eficiente e centrado no cliente.
 
 # Referências
 
-......  COLOQUE AQUI O SEU TEXTO ......
-
-> Inclua todas as referências (livros, artigos, sites, etc) utilizados
-> no desenvolvimento do trabalho.
-> 
-> **Links Úteis**:
-> - [Formato ABNT](https://www.normastecnicas.com/abnt/trabalhos-academicos/referencias/)
-> - [Referências Bibliográficas da ABNT](https://comunidade.rockcontent.com/referencia-bibliografica-abnt/)
-
-## Apêndice
-
-......  COLOQUE AQUI O SEU TEXTO ......
-
-> - Documentação adicional, como diagramas UML, scripts SQL, entre outros, que complementam o entendimento do projeto.
+- [Template SBC Conferences](https://www.overleaf.com/latex/templates/sbc-conferences-template/blbxwjwzdngr)
+- [Documentação do ASP.NET Core](https://learn.microsoft.com/pt-br/aspnet/core/?view=aspnetcore-8.0)
