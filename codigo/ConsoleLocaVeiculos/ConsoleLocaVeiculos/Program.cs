@@ -2,8 +2,10 @@
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using Microsoft.OpenApi.Models;
 using ConsoleLocaVeiculos.Context;
 
 namespace ConsoleLocaVeiculos
@@ -25,7 +27,7 @@ namespace ConsoleLocaVeiculos
             if (app.Environment.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
-            }
+                }
 
             app.UseHttpsRedirection();
             app.UseRouting();
@@ -34,21 +36,23 @@ namespace ConsoleLocaVeiculos
             app.MapControllers();
 
             app.Run();
+                }
+            }
         }
-    }
-}
 
 
+                        services.AddDbContext<ApplicationContext>(options =>
+                            options.UseSqlServer(context.Configuration.GetConnectionString("Server=.\\SQLEXPRESS;Database=LocaVeiculos;Trusted_Connection=True;TrustServerCertificate=True")));
 
 /*
 //Adicionando manualmente dados ao BD para certificar que ele está funcionando
 static void Main(string[] args)
-{
+                        {
     using(var context = new ApplicationContext())
-    {
+                    {
         //Adicionando um novo Cliente
         var cliente = new Cliente()
-        {
+                        {
             Nome = "Richard Montaya",
             Telefone = "011673398212",
             Endereco = "Medelin - Colombia",
@@ -62,7 +66,7 @@ static void Main(string[] args)
 
         //Adicionando um novo Veiculo
         var veiculo = new Veiculo()
-        {
+                            {
             PlacaVeiculo = "SEP2023",
             MarcaVeiculo = "RAM",
             ModeloVeiculo = "Dodge RAM",
@@ -77,7 +81,7 @@ static void Main(string[] args)
 
         //Adicionando uma nova Reserva
         var reserva = new Reserva()
-        {
+                        {
             IdVeiculo = veiculo.IDVeiculo,
             IdCliente = cliente.IdCliente,
             DataComeco = new DateTime(2024, 1, 16),
@@ -90,6 +94,3 @@ static void Main(string[] args)
         context.SaveChanges();
     }
 }
-
-} */
-

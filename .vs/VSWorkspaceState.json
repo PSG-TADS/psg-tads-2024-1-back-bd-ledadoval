@@ -4,10 +4,10 @@
     "\\codigo",
     "\\codigo\\ConsoleLocaVeiculos",
     "\\codigo\\ConsoleLocaVeiculos\\ConsoleLocaVeiculos",
-    "\\docs",
-    "\\docs\\concepcao",
-    "\\docs\\relatorio"
+    "\\codigo\\ConsoleLocaVeiculos\\ConsoleLocaVeiculos\\Context",
+    "\\codigo\\ConsoleLocaVeiculos\\ConsoleLocaVeiculos\\Controller",
+    "\\codigo\\ConsoleLocaVeiculos\\ConsoleLocaVeiculos\\Models"
   ],
-  "SelectedNode": "\\docs\\relatorio\\Relatorio Tecnico - TEMPLATE.md",
+  "SelectedNode": "\\codigo\\ConsoleLocaVeiculos\\ConsoleLocaVeiculos\\Program.cs",
   "PreviewInSolutionExplorer": false
 }

@@ -79,6 +79,10 @@
             "NSubstitute": {
               "target": "Package",
               "version": "[5.1.0, )"
+            },
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[6.2.3, )"
             }
           },
           "imports": [

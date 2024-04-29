@@ -406,11 +406,21 @@ Remove um veículo existente com o ID fornecido.
 
 # Resultados e Conclusões
 
-......  COLOQUE AQUI OS RESULTADOS E CONCLUSÕES ......
+Durante o processo de desenvolvimento do sistema LocaVeículos, analisamos todos os resultados visando fornecer uma experiência agradável para todos os usuários seguindo os requisitos e especificações do projeto.
 
-> - Análise dos resultados obtidos com o desenvolvimento do sistema.
-- Avaliação da conformidade dos requisitos do sistema.
-- Conclusões sobre a eficácia do sistema desenvolvido em atender às necessidades da locadora de veículos.
+- **Automação de Processos:** O sistema permite a automação de diversos processos manuais, como registro de clientes, gestão de reservas e controle de veículos disponíveis.
+    
+- **Melhoria da Precisão dos Dados:** Com a centralização de todas as informações em um único sistema e a implementação de validações de dados, houve uma melhoria significativa na precisão e integridade dos dados. 
+    
+## Avaliação da Conformidade dos Requisitos
+
+Para a análise se todos os requisitos foram atendidos realizamos testes para observar as funcionalidades implementadas e tivemos os seguintes resultados:
+
+- Todos os requisitos funcionais identificados foram devidamente implementados no sistema, o que indica que todas as principais funcionalidades esperadas estão disponíveis para os usuários.
+    
+- Os requisitos não funcionais, como desempenho, segurança e usabilidade, foram atendidos de acordo com as expectativas.
+    
+- O sistema foi capaz de lidar com cenários variados e situações de uso realista, demonstrando sua robustez e capacidade de suportar as necessidades da locadora de veículos.
 
 # Considerações Finais
 
