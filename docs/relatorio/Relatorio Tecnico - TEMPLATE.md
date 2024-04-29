@@ -173,7 +173,7 @@ O modelo de dados utilizado no sistema é composto por várias entidades relacio
   
 - **Tabela Reserva:** Registra as reservas de veículos realizadas pelos clientes, incluindo o cliente associado, o veículo reservado, o período de locação, o valor total, entre outros.
 
-![Modelagem de Dados]{./concepcao/modeloconceitual.png}
+![Modelagem de Dados](../concepcao/modelconceitual.png)
 
 ## Relacionamentos
 
@@ -185,7 +185,7 @@ Existem vários relacionamentos entre as entidades do banco de dados:
 
 Esses relacionamentos são estabelecidos por meio de chaves estrangeiras nas tabelas do banco de dados.
 
-![Diagrama ERE]{./concepcao/diagramaere.png}
+![Diagrama ERE](../concepcao/diagramaere.png)
 
 
 # Documentação EndPoints

@@ -6,8 +6,10 @@
     "\\codigo\\ConsoleLocaVeiculos\\ConsoleLocaVeiculos",
     "\\codigo\\ConsoleLocaVeiculos\\ConsoleLocaVeiculos\\Context",
     "\\codigo\\ConsoleLocaVeiculos\\ConsoleLocaVeiculos\\Controller",
-    "\\codigo\\ConsoleLocaVeiculos\\ConsoleLocaVeiculos\\Models"
+    "\\codigo\\ConsoleLocaVeiculos\\ConsoleLocaVeiculos\\Models",
+    "\\docs",
+    "\\docs\\relatorio"
   ],
-  "SelectedNode": "\\codigo\\ConsoleLocaVeiculos\\ConsoleLocaVeiculos\\Program.cs",
+  "SelectedNode": "\\README.md",
   "PreviewInSolutionExplorer": false
 }
