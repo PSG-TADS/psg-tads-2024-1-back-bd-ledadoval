@@ -173,6 +173,8 @@ O modelo de dados utilizado no sistema é composto por várias entidades relacio
   
 - **Tabela Reserva:** Registra as reservas de veículos realizadas pelos clientes, incluindo o cliente associado, o veículo reservado, o período de locação, o valor total, entre outros.
 
+![Modelagem de Dados]{./concepcao/modeloconceitual.png}
+
 ## Relacionamentos
 
 Existem vários relacionamentos entre as entidades do banco de dados:
@@ -182,6 +184,9 @@ Existem vários relacionamentos entre as entidades do banco de dados:
 - Um veículo pode estar associado a várias reservas, mas uma reserva está associada a apenas um veículo.
 
 Esses relacionamentos são estabelecidos por meio de chaves estrangeiras nas tabelas do banco de dados.
+
+![Diagrama ERE]{./concepcao/diagramaere.png}
+
 
 # Documentação EndPoints
 
@@ -394,15 +399,6 @@ Remove um veículo existente com o ID fornecido.
 - **Código de Resposta:**
     - 204 No Content: Veículo removido com sucesso.
     - 404 Not Found: Veículo não encontrado.
-
-## Teste e Validação
-
-......  INCLUA AQUI OS TESTES E VALIDAÇÕES ......
-
-> - Detalhamento dos testes realizados no sistema, tanto manuais quanto automatizados.
-- Discussão sobre a cobertura de testes e a eficácia dos testes realizados.
-- Relato de problemas encontrados durante os testes e como foram resolvidos.
-
 
 # Resultados e Conclusões
 
