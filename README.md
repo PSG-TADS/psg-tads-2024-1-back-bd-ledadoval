@@ -8,7 +8,3 @@ O LocaVeículas é um sistema de locadora de veículos desenvolvido em C# com o 
 ## Professores responsáveis
 
 * Leonardo Vilela Cardoso
-
-## Instruções de utilização
-
-Assim que a primeira versão do sistema estiver disponível, deverá complementar com as instruções de utilização. Descreva como instalar eventuais dependências e como executar a aplicação.
