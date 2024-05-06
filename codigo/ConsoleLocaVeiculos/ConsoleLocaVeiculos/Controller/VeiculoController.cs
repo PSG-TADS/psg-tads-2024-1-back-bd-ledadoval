@@ -18,22 +18,23 @@ namespace ConsoleLocaVeiculos.Controller
 
         // GET: api/Veiculo
         [HttpGet]
-        public IActionResult ObterTodosVeiculos()
+              public ActionResult<IEnumerable<Veiculo>> GetVeiculo()
         {
-            var veiculos = _context.Veiculo.ToList();
-            return Ok(veiculos);
+            return _context.Veiculo.ToList();
         }
 
         // GET: api/Veiculo/5
         [HttpGet("{id}")]
-        public IActionResult GetVeiculo(int id)
+        public ActionResult<Veiculo> GetVeiculo(int id)
         {
             var veiculo = _context.Veiculo.Find(id);
+
             if (veiculo == null)
             {
                 return NotFound();
             }
-            return Ok(veiculo);
+
+            return veiculo;
         }
 
         // PUT: api/Veiculo/5

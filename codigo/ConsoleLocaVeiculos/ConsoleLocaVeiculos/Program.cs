@@ -7,6 +7,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.OpenApi.Models;
 using ConsoleLocaVeiculos.Context;
+using Swashbuckle.AspNetCore;
 
 namespace ConsoleLocaVeiculos
 {
@@ -17,32 +18,54 @@ namespace ConsoleLocaVeiculos
             var builder = WebApplication.CreateBuilder(args);
 
             // Configurando o serviço de conexão com o banco de dados
-            builder.Services.AddController();
+            builder.Services.AddControllers();
             builder.Services.AddDbContext<ApplicationContext>(options =>
                 options.UseSqlServer(builder.Configuration.GetConnectionString(@"Server=.\SQLEXPRESS;Database=LocaVeiculos;Trusted_Connection=True;TrustServerCertificate=True")));
+            builder.Services.AddSwaggerGen(c =>
+            {
+                c.SwaggerDoc("v1", new OpenApiInfo { Title = "ConsoleLocaVeiculos", Version = "v1" });
+            });
+
 
             var app = builder.Build();
 
-            // Configurando o pipeline de requisição HTTP
             if (app.Environment.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
-                }
+            }
+                app.UseSwagger();
+                app.UseSwaggerUI(c =>
+                {
+                    c.SwaggerEndpoint("/swagger/v1/swagger.json", "ConsoleLocaVeiculos");
+                    c.RoutePrefix = string.Empty; 
+                });
 
-            app.UseHttpsRedirection();
             app.UseRouting();
             app.UseAuthorization();
 
-            app.MapControllers();
+            app.Use(async (context, next) =>
+            {
+                if (context.Request.Path == "/")
+                {
+                    context.Response.Redirect("/swagger/index.html");
+                    return;
+                }
+
+                await next();
+            });
+
+            app.MapGet("/", () => "Hello World!");
+
 
             app.Run();
                 }
-            }
+
+        private static object async(object context, object next)
+        {
+            throw new NotImplementedException();
         }
-
-
-                        services.AddDbContext<ApplicationContext>(options =>
-                            options.UseSqlServer(context.Configuration.GetConnectionString("Server=.\\SQLEXPRESS;Database=LocaVeiculos;Trusted_Connection=True;TrustServerCertificate=True")));
+    }
+        }
 
 /*
 //Adicionando manualmente dados ao BD para certificar que ele está funcionando
@@ -94,3 +117,4 @@ static void Main(string[] args)
         context.SaveChanges();
     }
 }
+*/

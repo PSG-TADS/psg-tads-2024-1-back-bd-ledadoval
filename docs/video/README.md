@@ -1,8 +1,5 @@
 # Vídeos do Projeto
-A relação abaixo lista os vídeos feitos para o projeto:
- - [Vídeo AAAAAAAA]()
- - [Vídeo BBBBBBBB]()
+Nessa sessão, temos o link para o vídeo de apresentação do projeto de gestão de locadora de automoveis.
 
-> Nesta pasta inclua arquivos de vídeo produzidos para divulgação do 
-> projeto e seus resutados.
+ - [Vídeo de Apresentação do LocaVeiculos](https://youtu.be/Pt48h3WSbrc)
 

@@ -4,12 +4,13 @@
     "\\codigo",
     "\\codigo\\ConsoleLocaVeiculos",
     "\\codigo\\ConsoleLocaVeiculos\\ConsoleLocaVeiculos",
-    "\\codigo\\ConsoleLocaVeiculos\\ConsoleLocaVeiculos\\Context",
-    "\\codigo\\ConsoleLocaVeiculos\\ConsoleLocaVeiculos\\Controller",
+    "\\codigo\\ConsoleLocaVeiculos\\ConsoleLocaVeiculos\\bin",
     "\\codigo\\ConsoleLocaVeiculos\\ConsoleLocaVeiculos\\Models",
-    "\\docs",
+    "\\codigo\\ConsoleLocaVeiculos\\ConsoleLocaVeiculos\\obj\\Release\\net8.0",
+    "\\codigo\\ConsoleLocaVeiculos\\ConsoleLocaVeiculos\\obj\\Release\\net8.0\\ref",
+    "\\codigo\\ConsoleLocaVeiculos\\ConsoleLocaVeiculos\\obj\\Release\\net8.0\\refint",
     "\\docs\\relatorio"
   ],
-  "SelectedNode": "\\README.md",
+  "SelectedNode": "\\codigo\\ConsoleLocaVeiculos\\ConsoleLocaVeiculos.sln",
   "PreviewInSolutionExplorer": false
 }

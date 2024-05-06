@@ -7,6 +7,7 @@ using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
 using ConsoleLocaVeiculos;
+using Microsoft.EntityFrameworkCore;
 
 namespace ConsoleLocaVeiculos.Controller
 {
@@ -43,6 +44,37 @@ namespace ConsoleLocaVeiculos.Controller
 
                 return reserva;
             }
+
+            // PUT: api/Reserva/5
+            [HttpPut("{id}")]
+            public async Task<IActionResult> PutReserva(int id, Reserva reserva)
+            {
+                if (id != reserva.IdReserva)
+                {
+                    return BadRequest();
+                }
+
+                _context.Entry(reserva).State = EntityState.Modified;
+
+                try
+                {
+                    await _context.SaveChangesAsync();
+                }
+                catch (DbUpdateConcurrencyException)
+                {
+                    if (!ReservaExists(id))
+                    {
+                        return NotFound();
+                    }
+                    else
+                    {
+                        throw;
+                    }
+                }
+
+                return NoContent();
+            }
+
 
             // POST: api/Reserva
             [HttpPost]

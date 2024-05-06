@@ -2,11 +2,6 @@ using Microsoft.EntityFrameworkCore;
 using ConsoleLocaVeiculos;
 using ConsoleLocaVeiculos.Migrations;
 
-namespace ConsoleLocaVeiculos.Context
-{
-    using Microsoft.EntityFrameworkCore;
-    using ConsoleLocaVeiculos;
-
     namespace ConsoleLocaVeiculos.Context
     {
         public class ApplicationContext : DbContext
@@ -21,4 +16,3 @@ namespace ConsoleLocaVeiculos.Context
         }
     }
 
-}

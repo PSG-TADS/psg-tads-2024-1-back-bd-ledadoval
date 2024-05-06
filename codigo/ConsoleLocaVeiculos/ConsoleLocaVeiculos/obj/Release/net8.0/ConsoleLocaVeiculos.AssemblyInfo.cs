@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ConsoleLocaVeiculos")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+6e1514251ea6228f451615c5754da3e492e77268")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d8e37b50ece32b417c71f5b4b1c2194f932fa40f")]
 [assembly: System.Reflection.AssemblyProductAttribute("ConsoleLocaVeiculos")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ConsoleLocaVeiculos")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
