@@ -28,14 +28,15 @@ Tecnologia em Análise e Desenvolvimento de Sistemas
     - [Requisitos Funcionais](#requisitos-funcionais)
     - [Requisitos não Funcionais](#requisitos-não-funcionais)
   - [Arquitetura do Sistema](#arquitetura-do-sistema)
-  - [Implementação Técnica](#implementação-técnica)
-  - [Descrição do Banco de Dados](#descrição-do-banco-de-dados)
-  - [Testes e Validação](#testes-e-validação)
-  - [Resultados e Conclusões](#resultados-e-conclusões)
-  - [Considerações Finais](#considerações-finais)
-  - [Ferramentas](#ferramentas)
-  - [Referências](#referências)
-  - [Apêndices](#apêndices)
+- [Wireframe](#wireframe)
+- [Implementação Técnica](#implementação-técnica)
+- [Descrição do Banco de Dados](#descrição-do-banco-de-dados)
+ - [Testes e Validação](#testes-e-validação)
+ - [Resultados e Conclusões](#resultados-e-conclusões)
+ - [Considerações Finais](#considerações-finais)
+ - [Ferramentas](#ferramentas)
+ - [Referências](#referências)
+ - [Apêndices](#apêndices)
 
 
 # Introdução
@@ -116,6 +117,18 @@ A divisão de responsabilidades entre as camadas do sistema foi realizada da seg
 - A camada de **Context** é substituída por respostas JSON retornadas pelos endpoints da API. Essas respostas são serializações dos objetos retornados pelo modelo para representar os dados de forma estruturada.
   
 - A camada de **Controller** é responsável por receber as requisições HTTP dos clientes, roteá-las para as ações apropriadas e retornar as respostas correspondentes. As controllers contêm a lógica de aplicação para processar as requisições e atualizar o modelo conforme necessário.
+
+# Wireframes
+
+Para a construção do FrontEnd do sistema foi esquematizado wiraframes que auxiliaram na composição do site do LocaVeiculos. Utilizando o NodeJS, fizemos a conexão com o banco de dados que foi esquematizado e seguindo as rotas dos endpoints, deixamos o sistema funcional.
+
+![Tela de Login](../wireframes/Wireframe%20-%201.png)
+![Tela de Cadastro](../wireframes/Wireframe%20-%202.png)
+![Tela de Dashboard](../wireframes/Wireframe%20-%203.png)
+![Tela de Cadastro de Veiculos](../wireframes/Wireframe%20-%204.png)
+![Tela de Cadastro de Clientes](../wireframes/Wireframe%20-%205.png)
+![Tela de Registro de Reservas](../wireframes/Wireframe%20-%206.png)
+
 
 # Implementação Técnica
 

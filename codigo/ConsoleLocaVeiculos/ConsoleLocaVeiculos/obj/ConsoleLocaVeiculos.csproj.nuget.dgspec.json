@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\ledad\\OneDrive\\Área de Trabalho\\tads\\codigo\\ConsoleLocaVeiculos\\ConsoleLocaVeiculos\\ConsoleLocaVeiculos.csproj": {}
+    "C:\\Users\\ledad\\psg-tads-2024-1-back-bd-ledadoval\\codigo\\ConsoleLocaVeiculos\\ConsoleLocaVeiculos\\ConsoleLocaVeiculos.csproj": {}
   },
   "projects": {
-    "C:\\Users\\ledad\\OneDrive\\Área de Trabalho\\tads\\codigo\\ConsoleLocaVeiculos\\ConsoleLocaVeiculos\\ConsoleLocaVeiculos.csproj": {
+    "C:\\Users\\ledad\\psg-tads-2024-1-back-bd-ledadoval\\codigo\\ConsoleLocaVeiculos\\ConsoleLocaVeiculos\\ConsoleLocaVeiculos.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ledad\\OneDrive\\Área de Trabalho\\tads\\codigo\\ConsoleLocaVeiculos\\ConsoleLocaVeiculos\\ConsoleLocaVeiculos.csproj",
+        "projectUniqueName": "C:\\Users\\ledad\\psg-tads-2024-1-back-bd-ledadoval\\codigo\\ConsoleLocaVeiculos\\ConsoleLocaVeiculos\\ConsoleLocaVeiculos.csproj",
         "projectName": "ConsoleLocaVeiculos",
-        "projectPath": "C:\\Users\\ledad\\OneDrive\\Área de Trabalho\\tads\\codigo\\ConsoleLocaVeiculos\\ConsoleLocaVeiculos\\ConsoleLocaVeiculos.csproj",
+        "projectPath": "C:\\Users\\ledad\\psg-tads-2024-1-back-bd-ledadoval\\codigo\\ConsoleLocaVeiculos\\ConsoleLocaVeiculos\\ConsoleLocaVeiculos.csproj",
         "packagesPath": "C:\\Users\\ledad\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ledad\\OneDrive\\Área de Trabalho\\tads\\codigo\\ConsoleLocaVeiculos\\ConsoleLocaVeiculos\\obj\\",
+        "outputPath": "C:\\Users\\ledad\\psg-tads-2024-1-back-bd-ledadoval\\codigo\\ConsoleLocaVeiculos\\ConsoleLocaVeiculos\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\ledad\\AppData\\Roaming\\NuGet\\NuGet.Config",

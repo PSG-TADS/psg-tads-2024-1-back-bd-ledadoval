@@ -1,0 +1,307 @@
+body {
+  font-family: Arial, sans-serif;
+}
+
+.login {
+  background-color: #d3d3d3; /* Cor de fundo cinza */
+  width: 300px; /* Largura do card */
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin: 50px auto; /* Centraliza horizontalmente */
+  text-align: center;
+}
+
+.login h2 {
+  margin-bottom: 20px;
+  font-size: 24px;
+}
+
+.login input {
+  display: block;
+  width: calc(100% - 20px); /* Ajusta a largura */
+  margin: 10px auto;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 5px;
+}
+
+.login button {
+  width: 100%;
+  padding: 10px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.login button:hover {
+  background-color: #45a049;
+}
+
+.login p {
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+.login a {
+  color: blue;
+  text-decoration: none;
+}
+
+.login a:hover {
+  text-decoration: underline;
+}
+
+.error {
+  color: red;
+  margin-top: 10px;
+}
+
+.cadastro {
+  background-color: #d3d3d3; /* Cor de fundo cinza */
+  width: 300px; /* Largura do card */
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin: 50px auto; /* Centraliza horizontalmente */
+  text-align: center;
+}
+
+.cadastro-veiculo {
+  background-color: #d3d3d3; /* Cor de fundo cinza */
+  width: 500px; /* Largura do card */
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin: 50px auto; /* Centraliza horizontalmente */
+  text-align: center;
+}
+
+.cadastro h2, .cadastro-veiculo h2 {
+  margin-bottom: 20px;
+  font-size: 24px;
+}
+
+.cadastro input {
+  display: block;
+  width: calc(100% - 20px); 
+  margin: 10px auto;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.cadastro-veiculo input {
+  display: block;
+  width: calc(45% - 20px); 
+  margin: 10px 5px;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  float: left;
+}
+
+.cadastro button, .cadastro-veiculo button {
+  width: 100%;
+  padding: 10px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.cadastro button:hover, .cadastro-veiculo button:hover {
+  background-color: #45a049;
+}
+
+.cadastro p, .cadastro-veiculo p {
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+.cadastro a {
+  color: blue;
+  text-decoration: none;
+}
+
+.cadastro a:hover {
+  text-decoration: underline;
+}
+
+.mensagem {
+  color: red;
+  margin-top: 10px;
+}
+
+.cliente-form {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #d3d3d3;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.cliente-form h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.cliente-form form {
+  display: flex;
+  flex-direction: column;
+}
+
+.cliente-form input[type="text"],
+.cliente-form input[type="email"],
+.cliente-form input[type="number"] {
+  margin-bottom: 10px;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.cliente-form label {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.cliente-form label input[type="checkbox"] {
+  margin-left: 10px;
+}
+
+.cliente-form button {
+  padding: 10px;
+  font-size: 16px;
+  color: #fff;
+  background-color: #28a745;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.cliente-form button:hover {
+  background-color: #218838;
+}
+
+.reservas {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #d3d3d3;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.reservas h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.reservas form {
+  display: flex;
+  flex-direction: column;
+}
+
+.reservas input[type="number"],
+.reservas input[type="datetime-local"] {
+  margin-bottom: 10px;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.reservas label {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.reservas label input[type="checkbox"] {
+  margin-left: 10px;
+}
+
+.reservas button {
+  padding: 10px;
+  font-size: 16px;
+  color: #fff;
+  background-color: #28a745;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.reservas button:hover {
+  background-color: #45a049;
+}
+
+.reservas ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.reservas li {
+  background-color: #fff;
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.dashboard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  background-color: #fff;
+  min-height: 100vh;
+}
+
+.logout {
+  align-self: flex-end;
+  background-color: transparent;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  color: #000;
+  margin-bottom: 20px;
+}
+
+.section {
+  background-color: #d3d3d3;
+  padding: 20px;
+  margin: 10px;
+  width: 300px;
+}
+
+.section h3 {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.section ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.section li {
+  padding: 5px 0;
+}
+
+.section a {
+  display: block;
+  text-align: right;
+  margin-top: 10px;
+  text-decoration: none;
+  color: #007bff;
+}
+
+.section a:hover {
+  text-decoration: underline;
+}
+
